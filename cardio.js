@@ -1,5 +1,27 @@
 // 🏃🏼🏊🏼🏋🏼🏄🏼
 
+const people = [
+  'Faber Guerreau',
+  'Gilbertine Stichall',
+  'Cristina Cuckoo',
+  'Johnette Chatelot',
+  'Trish Mayou',
+  'Ruth Connell',
+  'Hamid Elsegood',
+  'Thorstein Woodward',
+  'Bethena Porte',
+  'Nelle Durek',
+  'Bastien Leyrroyd',
+  'Albie Tranfield',
+  'Bryce Temprell',
+  'Darya Chinery',
+  'Rea Matoshin',
+  'Tommie Benda',
+  'Lowell Trowel',
+  'Wayne Claughton',
+  'Teena Bansal',
+  'Basile Phonix',
+];
 /**
  * Filters people array based on total number of letters in their name (including spaces).
  * Filter if name is strictly greater than length
@@ -8,7 +30,11 @@
  * @param {number} length
  * @returns {string[]} filtered array
  */
-function filterByLength(people, length) {}
+
+function filterByLength(people, length) {
+  const list = people.filter(person => person.length > length)
+  return list;
+}
 
 /**
  * Returns an array of every nth person.
@@ -23,7 +49,9 @@ function filterByLength(people, length) {}
  *    everyNPerson(['Matt', 'Kim', 'Kanye', 'Obama', 'Hans'], 2)
  *    // → ['Matt', 'Kanye', 'Hans']
  */
-function everyNPerson(people, n) {}
+function everyNPerson(people, n) {
+
+}
 
 /**
  * Returns an array where each entry is the person's intials
