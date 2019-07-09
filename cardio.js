@@ -57,7 +57,6 @@ function everyNPerson(people, n) {
   })
   return list;
 }
-console.log(everyNPerson(people,0));
 /**
  * Returns an array where each entry is the person's intials
  * @param {string[]} people
@@ -67,8 +66,15 @@ console.log(everyNPerson(people,0));
  *    initials(['Kanye West', 'Barack Obama'])
  *    // → ['KW', 'BO']
  */
-function initials(people) {}
-
+function initials(people) {
+  const list = people.map((person)=>{
+    let name = person.split(" ");
+    let firstCharacters = name[0][0]+ name[1][0];
+    return firstCharacters;
+  })
+  return list;
+}
+initials(people);
 /**
  * Returns an array where every person is prepended with their position in the array
  * @param {string[]} people
