@@ -50,9 +50,14 @@ function filterByLength(people, length) {
  *    // → ['Matt', 'Kanye', 'Hans']
  */
 function everyNPerson(people, n) {
+  if(n === 0) return people;
 
+  const list = people.filter((person)=>{
+    return people.indexOf(person) % n === 0
+  })
+  return list;
 }
-
+console.log(everyNPerson(people,0));
 /**
  * Returns an array where each entry is the person's intials
  * @param {string[]} people
