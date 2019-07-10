@@ -130,8 +130,10 @@ function everyoneHasLetter(people, letter) {
   doesContainLetter = people.map((person)=>{
     if(person.includes(letter))
       return true;
+    else
+      return false;
   })
-  return doesContainLetter.includes(true) ? true: false;
+  return doesContainLetter.includes(false) ? false: true;
 }
 /**
  * Returns `true` if at least one person has `letter` in their name.
