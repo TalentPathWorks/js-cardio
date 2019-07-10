@@ -70,7 +70,7 @@ function initials(people) {
   const list = people.map((person)=>{
     const name = person.split(" ");
     // Takes the first character of the first item in the name array and concats it to the
-    // first character of the second item of the names array
+    // first character of the second item of the names array. Ex. ["FirstName","LastName"]
     const firstCharacters = name[0][0]+ name[1][0];
     return firstCharacters;
   })
@@ -98,14 +98,20 @@ function peopleWithPosition(people) {
  * @param {string[]} people
  * @returns {string[]} sorted array
  */
-function sortByFirstName(people) {}
+function sortByFirstName(people) {
+  const unorderedList = people;
+  return unorderedList.sort();
+
+}
 
 /**
  * Sorts `people` by last name
  * @param {string[]} people
  * @returns {string[]} sorted array
  */
-function sortByLastName(people) {}
+function sortByLastName(people) {
+  
+}
 
 /**
  * Counts all the characters in the people array (including spaces)
