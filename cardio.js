@@ -156,7 +156,6 @@ function everyoneHasLetter(people, letter) {
   })
   return doesContainLetter.includes(true) ? true: false;
 }
-console.log(everyoneHasLetter(people, 'z'));
 /**
  * Returns `true` if at least one person has `letter` in their name.
  * Returns `false` otherwise
@@ -164,7 +163,14 @@ console.log(everyoneHasLetter(people, 'z'));
  * @param {string} letter
  * @returns {boolean}
  */
-function someoneHasLetter(people, letter) {}
+function someoneHasLetter(people, letter) {
+  let doesContainLetter = false;
+  doesContainLetter = people.map((person)=>{
+    if(person.includes(letter))
+      return true;
+  })
+  return doesContainLetter.includes(true) ? true: false;
+}
 
 module.exports = {
   filterByLength,
