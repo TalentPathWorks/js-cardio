@@ -129,14 +129,18 @@ function sortByLastName(people) {
     return `${person[0]} ${person[1]}`;
   });
 }
-console.log(sortByLastName(people));
 /**
  * Counts all the characters in the people array (including spaces)
  * @param {Array} people Array of names
  * @return Number of characters
  */
-function countTotalCharacters(people) {}
-
+function countTotalCharacters(people) {
+  let counter = 0;
+  people.forEach((person)=>{
+    counter += person.length;
+  })
+  return counter;
+}
 /**
  * Returns `true` if everyone in `people` has `letter` in their name.
  * Returns `false` otherwise
@@ -144,7 +148,9 @@ function countTotalCharacters(people) {}
  * @param {string} letter
  * @returns {boolean}
  */
-function everyoneHasLetter(people, letter) {}
+function everyoneHasLetter(people, letter) {
+  
+}
 
 /**
  * Returns `true` if at least one person has `letter` in their name.
