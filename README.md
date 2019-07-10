@@ -40,11 +40,6 @@ Below is the dummy data we are testing against if you need it for any reason.
 
 We are using Jest for testing.
 1. Clone this repository
-2. Create your own empty repository on GitHub
-3. Open locally and change the remote:
-      ```bash
-      $ git remote set-url https://github.com/USERNAME/REPOSITORY.git
-      ```
 4. Install dependencies
       ```bash
       $ npm install
@@ -54,9 +49,6 @@ We are using Jest for testing.
     $ npm test
     ```
 
-## Groups
+## Group
 
-1. Brennan, CJ
-2. Dean, Ayana
-3. Cody, Adam
 4. Dandy, Andre, Roberto

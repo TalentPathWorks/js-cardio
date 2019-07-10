@@ -1,27 +1,5 @@
 // 🏃🏼🏊🏼🏋🏼🏄🏼
 
-const people = [
-  'Faber Guerreau',
-  'Gilbertine Stichall',
-  'Cristina Cuckoo',
-  'Johnette Chatelot',
-  'Trish Mayou',
-  'Ruth Connell',
-  'Hamid Elsegood',
-  'Thorstein Woodward',
-  'Bethena Porte',
-  'Nelle Durek',
-  'Bastien Leyrroyd',
-  'Albie Tranfield',
-  'Bryce Temprell',
-  'Darya Chinery',
-  'Rea Matoshin',
-  'Tommie Benda',
-  'Lowell Trowel',
-  'Wayne Claughton',
-  'Teena Bansal',
-  'Basile Phonix',
-];
 /**
  * Filters people array based on total number of letters in their name (including spaces).
  * Filter if name is strictly greater than length
