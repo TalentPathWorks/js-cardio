@@ -68,13 +68,14 @@ function everyNPerson(people, n) {
  */
 function initials(people) {
   const list = people.map((person)=>{
-    let name = person.split(" ");
-    let firstCharacters = name[0][0]+ name[1][0];
+    const name = person.split(" ");
+    // Takes the first character of the first item in the name array and concats it to the
+    // first character of the second item of the names array
+    const firstCharacters = name[0][0]+ name[1][0];
     return firstCharacters;
   })
   return list;
 }
-initials(people);
 /**
  * Returns an array where every person is prepended with their position in the array
  * @param {string[]} people
@@ -84,7 +85,13 @@ initials(people);
  *    peopleWithPosition(['Kanye', 'Barack'])
  *    // → ['1. Kanye', '2. Barack']
  */
-function peopleWithPosition(people) {}
+function peopleWithPosition(people) {
+  const list = people.map((person)=>{
+      const position = people.indexOf(person);
+      return `${position}: ${person}`;
+    });
+  return list;
+}
 
 /**
  * Sorts `people` by first name
