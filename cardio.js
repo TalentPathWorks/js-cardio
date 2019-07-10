@@ -92,7 +92,6 @@ function sortByLastName(people) {
   const unorderedList = people.map((person)=>{
     return person.split(" ");
   })
-  console.log(unorderedList)
   const orderedList = unorderedList.sort((firstElement,secondElement)=>{
     // compare the lastnames of each element, returns 0 if equal (no change)
       if(firstElement[1] === secondElement[1])

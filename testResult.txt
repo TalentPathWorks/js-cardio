@@ -1,0 +1,35 @@
+rsanchez@pop-os:~/Github/js-cardio$ npm test
+
+> js-cardio@1.0.0 test /home/rsanchez/Github/js-cardio
+> jest
+
+ PASS  ./test.js
+  filterByLength
+    ✓ filters by length of 15 (3ms)
+    ✓ filters by length of 0 (1ms)
+    ✓ filters by a massive length
+  everyNPerson
+    ✓ returns every third person (1ms)
+    ✓ returns every person
+    ✓ returns every massive number of people
+  initials
+    ✓ returns everyone's initials (1ms)
+  sortByLastName
+    ✓ returns a sorted list of names by last name
+  countTotalCharacters
+    ✓ counts the total characters in a name (including spaces) (1ms)
+  someoneHasLetter
+    ✓ returns if one or more people have the letter
+  everyoneHasLetter
+    ✓ returns if all people have the letter
+  peopleWithPosition
+    ✓ returns everyone's name with their position (1ms)
+  sortByFirstName
+    ✓ sorts by first name
+
+Test Suites: 1 passed, 1 total
+Tests:       13 passed, 13 total
+Snapshots:   0 total
+Time:        1.025s
+Ran all test suites.
+
