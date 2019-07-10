@@ -99,6 +99,7 @@ function peopleWithPosition(people) {
  * @returns {string[]} sorted array
  */
 function sortByFirstName(people) {
+  
   const unorderedList = people;
   return unorderedList.sort();
 
@@ -110,9 +111,25 @@ function sortByFirstName(people) {
  * @returns {string[]} sorted array
  */
 function sortByLastName(people) {
-  
+  const unorderedList = people.map((person)=>{
+    return person.split(" ");
+  })
+  console.log(unorderedList)
+  const orderedList = unorderedList.sort((firstElement,secondElement)=>{
+    // compare the lastnames of each element, returns 0 if equal (no change)
+      if(firstElement[1] === secondElement[1])
+          return 0;
+      else 
+      // if firstElement is smaller than secondElement then (-1) sort firstElement lower than secondElement
+      // Else sort secondElement higher than firstElement (1)
+        return (firstElement[1] < secondElement[1]) ?  -1:1
+  });
+  // Concatonate firstname and lastname
+  return orderedList.map((person)=>{
+    return `${person[0]} ${person[1]}`;
+  });
 }
-
+console.log(sortByLastName(people));
 /**
  * Counts all the characters in the people array (including spaces)
  * @param {Array} people Array of names
